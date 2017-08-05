@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gravity</title>
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav">
+    <h1 class="nav-header">Gravity</h1>
+
+    <hr>
+
+    <form id="options">
+        <h2 class="form-header">Physic:</h2>
+        <div class="input-group">
+            <label for="gravity">Gravity:</label>
+            <input type="text" name="gravity" id="gravity">
+        </div>
+
+        <div class="input-group">
+            <label for="friction">Friction:</label>
+            <input type="text" name="friction" id="friction">
+        </div>
+
+        <div class="input-group">
+            <label for="deceleration">X-Deceleration:</label>
+            <input type="text" name="deceleration" id="deceleration">
+        </div>
+
+        <h2 class="form-header">Spawn:</h2>
+        <div class="input-group">
+            <label for="circlesNumber">Circles Number:</label>
+            <input type="text" name="circlesNumber" id="circlesNumber">
+        </div>
+
+        <div class="input-group">
+            <label for="minRadius">Min Radius:</label>
+            <input type="text" name="minRadius" id="minRadius">
+        </div>
+
+        <div class="input-group">
+            <label for="maxRadius">Max Radius:</label>
+            <input type="text" name="maxRadius" id="maxRadius">
+        </div>
+
+        <div class="input-group">
+            <label for="dxmin">dX Min:</label>
+            <input type="text" name="dxmin" id="dxmin">
+        </div>
+
+        <div class="input-group">
+            <label for="dxmax">dX Max:</label>
+            <input type="text" name="dxmax" id="dxmax">
+        </div>
+
+        <div class="input-group">
+            <label for="dymin">dY Min:</label>
+            <input type="text" name="dymin" id="dymin">
+        </div>
+
+        <div class="input-group">
+            <label for="dymax">dY Max:</label>
+            <input type="text" name="dymax" id="dymax">
+        </div>
+
+        <h2 class="form-header">Shoot:</h2>
+
+        <div class="input-group">
+            <label for="dxminShoot">dX Min:</label>
+            <input type="text" name="dxminShoot" id="dxminShoot">
+        </div>
+
+        <div class="input-group">
+            <label for="dxmaxShoot">dX Max:</label>
+            <input type="text" name="dxmaxShoot" id="dxmaxShoot">
+        </div>
+
+        <div class="input-group">
+            <label for="dyminShoot">dY Min:</label>
+            <input type="text" name="dyminShoot" id="dyminShoot">
+        </div>
+
+        <div class="input-group">
+            <label for="dymaxShoot">dY Max:</label>
+            <input type="text" name="dymaxShoot" id="dymaxShoot">
+        </div>
+
+        <div class="input-group">
+            <label for="shootInterval">Interval:</label>
+            <input type="text" name="shootInterval" id="shootInterval">
+        </div>
+
+
+        <div class="input-group">
+            <button type="submit" class="btn btn-submit">Save</button>
+        </div>
+
+    </form>
+
+    <div class="input-group">
+        <button id="shootBtn" class="btn btn-shoot">Shoot</button>
+    </div>
+    
+    <div class="padding-bottom"></div>
+
+</div>
+<canvas></canvas>
+<script src="main.js"></script>
+</body>
+</html>
