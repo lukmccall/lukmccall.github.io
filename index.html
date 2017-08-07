@@ -10,9 +10,14 @@
 <body>
     <nav>
         <h1>LukMcCall</h1>
+        <div class="link-grid">
+            <div class="link" url="?section=canvas">Canvas</div>
+            <div class="link" url="?section=websites">Websites</div>
+            <div class="link" url="?section=vipsource">VipSource</div>
+        </div>
     </nav>
     <main>
-        <div class="slider">
+        <div class="slider" section="canvas">
             <div class="slide slide-gravity slide-top-left" url="https://lukmccall.github.io/gravity">
                 <div class="slide-text slide-text-left">Gravity</div>
             </div>
@@ -23,6 +28,34 @@
                 <div class="slide-text slide-text-left">push</div>
             </div>
         </div>
+
+        <div class="slider" section="websites">
+            <div class="slide slide-cswild slide-top-left" url="http://cswild.pl">
+                <div class="slide-text slide-text-left">Cswild</div>
+            </div>
+            <div class="slide slide-cswildshop slide-top-right" url="http://sklep.cswild.pl">
+                <div class="slide-text slide-text-right">cswild shop</div>
+            </div>
+            <div class="slide slide-puchar slide-bottom-left" url="http://puchar.lo5.bielsko.pl">
+                <div class="slide-text slide-text-left">puchar lov</div>
+            </div>
+            <div class="slide slide-optima slide-bottom-right" url="http://optimadoradztwo.pl">
+                <div class="slide-text slide-text-right">optima</div>
+            </div>
+        </div>
+
+        <div class="slider" section="vipsource">
+            <div class="slide slide-vsmain slide-top-left" url="https://vipsource.eu">
+                <div class="slide-text slide-text-left">main</div>
+            </div>
+            <div class="slide slide-vsdemo slide-top-right" url="https://vipsource.eu/demo">
+                <div class="slide-text slide-text-right">demo</div>
+            </div>
+            <div class="slide slide-vspanel slide-bottom-left" url="https://vipsurce.eu/adminpanel">
+                <div class="slide-text slide-text-left">admin panel</div>
+            </div>
+        </div>
+
     </main>
 
 <script src="main.js"></script>

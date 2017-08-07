@@ -23,6 +23,37 @@ nav h1{
     padding: 2px 10px;
 }
 
+.link-grid{
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.link-grid .link{
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.link-grid .link.active{
+    text-decoration: underline;
+}
+.link-grid .link.active:hover{
+    cursor: default;
+}
+
+.link-grid .link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 @supports (display: grid) {
     @media (min-width: 1200px) {
         .slider {
@@ -79,15 +110,23 @@ nav h1{
     overflow: hidden;
 }
 
+.hidden{
+    display: none!important;
+}
+
 .slide:hover{
     cursor: pointer;
 }
 
 .slide:hover .slide-text{
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
 
 .slide-text{
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     position: absolute;
     z-index: 1;
@@ -103,10 +142,14 @@ nav h1{
 
 
 .slide-text-left{
+    -webkit-transform: translate(-400%,-50%);
+    -ms-transform: translate(-400%,-50%);
     transform: translate(-400%,-50%);
 }
 
 .slide-text-right{
+    -webkit-transform: translate(400%,-50%);
+    -ms-transform: translate(400%,-50%);
     transform: translate(400%,-50%);
 }
 
@@ -117,8 +160,8 @@ nav h1{
 }
 
 .slide:before{
-     content: '';
-     position: absolute;
+    content: '';
+    position: absolute;
 }
 
 .slide-top-left:after{
@@ -164,21 +207,49 @@ nav h1{
     right: 0;
 }
 .slide-bottom-right:before{
-    border-right: var(--sliderWouter) solid white;
+    border-right: var(--sliderWouter) solid var(--border-color);
     border-top: var(--sliderH) solid transparent;
     bottom: 0;
     right: 0;
 }
 
+
+/*canvas*/
 .slide-gravity{
     background-image: url("img/Gravity.png");
 }
 .slide-simplemovement{
-background-image: url("img/Simple Movement.png");
+    background-image: url("img/Simple Movement.png");
 }
 .slide-push{
     background-image: url("img/Push.png");
 }
+
+/*websites*/
+.slide-cswild{
+    background-image: url("img/CsWild.png");
+}
+.slide-cswildshop{
+    background-image: url("img/Sklep-CsWild.png");
+}
+.slide-puchar{
+    background-image: url("img/Puchar-Lo5.png");
+}
+.slide-optima{
+    background-image: url("img/Optimadoradztwo.png");
+}
+
+/*vipsource*/
+.slide-vsmain{
+    background-image: url("img/VIP-Source-Main.png");
+}
+.slide-vsdemo{
+    background-image: url("img/VIP-Source-Demo.png");
+}
+.slide-vspanel{
+    background-image: url("img/VIP-Source-Panel.png");
+}
+
 
 
 ::-webkit-scrollbar-track{

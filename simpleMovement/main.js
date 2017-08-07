@@ -1,6 +1,7 @@
 /**
  * Created by LukMcCall on 05.08.2017.
  */
+(function () {
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext("2d");
 var navWidth = 0;
@@ -236,3 +237,4 @@ function animate    () {
 }
 init();
 animate();
+})();

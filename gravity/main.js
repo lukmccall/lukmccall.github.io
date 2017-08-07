@@ -1,7 +1,7 @@
 /**
  * Created by LukMcCall on 05.08.2017.
  */
-
+(function () {
 var canvas = document.querySelector('canvas');
 var form = document.querySelector('#options');
 var nav = document.querySelector('.nav');
@@ -284,3 +284,4 @@ function animate() {
 init();
 animate();
 optionsInit();
+})();
