@@ -3,7 +3,7 @@
  */
 (function () {
 
-    var defaultSection = 'canvas';
+    var defaultSection = 'websites';
     var slides = document.getElementsByClassName('slide');
     var sliders = document.getElementsByClassName('slider');
     var links = document.getElementsByClassName('link');
