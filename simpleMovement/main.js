@@ -5,6 +5,9 @@ var canvas = document.querySelector('canvas');
 var c = canvas.getContext("2d");
 var navWidth = 0;
 
+canvas.width = innerWidth-navWidth;
+canvas.height = innerHeight;
+
 var player;
 var obstacles;
 
@@ -30,7 +33,7 @@ var playerSettings ={
 
 var gameSettings ={
     obstacle:{
-        num: 15,
+        num: 25,
         geometry:{
             width:{
                 min: 5,
@@ -84,7 +87,6 @@ addEventListener("keydown", function (event) {
         if(event.keyCode === 40) vector.y = 1;
     }
 });
-
 addEventListener("keyup", function (event) {
    if(event.keyCode in keyMap) {
        keyMap[event.keyCode] = false;
@@ -189,11 +191,6 @@ RectagleObject.prototype.draw = function(){
     c.fillRect(this.x-this.width/2, this.y-this.height/2, this.width, this.height);
 };
 
-canvas.width = innerWidth-navWidth;
-canvas.height = innerHeight;
-
-
-
 function drawBackground() {
     c.fillStyle = colors.bg;
     c.fillRect(0, 0, canvas.width, canvas.height);
@@ -226,7 +223,7 @@ function init() {
     }
 }
 
-function animate() {
+function animate    () {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, canvas.width, canvas.height);
     drawBackground();
