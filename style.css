@@ -256,6 +256,10 @@ nav h1{
     background-image: url("img/VIP-Source-Panel.png");
 }
 
+/*excel*/
+.slide-kwadratowydungeon{
+    background-image: url("img/kwadratowydungeon.png");
+}
 
 
 ::-webkit-scrollbar-track{
