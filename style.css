@@ -36,6 +36,15 @@ nav h1{
     -ms-flex-pack: center;
     justify-content: center;
 }
+@media (max-width: 450px) {
+    .link-grid{
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .link-grid .link{
+        text-align: center;
+    }
+}
 
 .link-grid .link{
     padding: 2px 10px;
@@ -259,6 +268,14 @@ nav h1{
 /*excel*/
 .slide-kwadratowydungeon{
     background-image: url("img/kwadratowydungeon.png");
+}
+
+/*templates*/
+.slide-templateshome{
+    background-image: url("img/TemplatesHome.png");
+}
+.slide-templatesportfolio{
+    background-image: url("img/TemplatesPortfolio.png");
 }
 
 
