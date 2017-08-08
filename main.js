@@ -25,7 +25,6 @@
     function sectionSelect() {
         var goodSection = false;
         for(var i=0; i < sliders.length;i++){
-            console.log(sliders[i].getAttribute('section'));
             if(sliders[i].getAttribute('section') != section) sliders[i].classList.add('hidden');
             else {
                 sliders[i].classList.remove('hidden');
