@@ -233,6 +233,9 @@ nav h1{
 .slide-push{
     background-image: url("img/Push.png");
 }
+.slide-solar{
+    background-image: url("img/Solar.png");
+}
 
 /*websites*/
 .slide-cswild{
