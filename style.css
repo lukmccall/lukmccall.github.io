@@ -239,6 +239,9 @@ nav h1{
 .slide-heart{
     background-image: url("img/Heart.png");
 }
+.slide-shoot{
+    background-image: url("img/Shoot.png");
+}
 
 /*websites*/
 .slide-cswild{
