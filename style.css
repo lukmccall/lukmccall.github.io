@@ -242,6 +242,9 @@ nav h1{
 .slide-shoot{
     background-image: url("img/Shoot.png");
 }
+.slide-pingpong{
+    background-image: url("img/Ping Pong.png");
+}
 
 /*websites*/
 .slide-cswild{
