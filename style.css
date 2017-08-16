@@ -248,6 +248,9 @@ nav h1{
 .slide-onlinegame{
     background-image: url("img/Online Game.png");
 }
+.slide-teleport{
+    background-image: url("img/Telepor.png");
+}
 
 /*websites*/
 .slide-cswild{
