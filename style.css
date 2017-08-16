@@ -251,6 +251,9 @@ nav h1{
 .slide-teleport{
     background-image: url("img/Telepor.png");
 }
+.slide-dog{
+    background-image: url("img/Dog.png");
+}
 
 /*websites*/
 .slide-cswild{
