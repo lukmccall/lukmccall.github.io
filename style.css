@@ -257,6 +257,9 @@ nav h1{
 .slide-platform{
     background-image: url("img/Platform.png");
 }
+.slide-raycast{
+    background-image: url("img/Ray Cast.png");
+}
 /*websites*/
 .slide-cswild{
     background-image: url("img/CsWild.png");
