@@ -254,7 +254,9 @@ nav h1{
 .slide-dog{
     background-image: url("img/Dog.png");
 }
-
+.slide-platform{
+    background-image: url("img/Platform.png");
+}
 /*websites*/
 .slide-cswild{
     background-image: url("img/CsWild.png");
