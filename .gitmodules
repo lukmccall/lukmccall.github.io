@@ -1,0 +1,3 @@
+[submodule "cellular-automaton"]
+	path = cellular-automaton
+	url = git@github.com:lukmccall/cellular-automaton.git
